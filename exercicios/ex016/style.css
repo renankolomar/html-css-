@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Texas';
+    src: url('fonts/texas font.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0bcd4;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Texas, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    text-align: center;
+    background-color: #1F0322;
+    border-radius: 15px;
+    color: #f0bcd4;
+    box-shadow: 3px 5px 10px #35043c;
+}
+
+h2 {
+    font-family: Texas, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #da4167;
+    border-radius: 15px;
+    color: #f0bcd4;
+    box-shadow: 5px 10px 20px #571b2a;
+    padding: 0px 50px;
+    display: inline-block;
+}
+
+h1:hover {
+    background-color: #f0bcd4;
+    color: #1F0322;
+    box-shadow: 5px 10px 20px #201221;
+}
+
+h2:hover {
+    background-color: #f0bcd4;
+    color: #da4167;
+    box-shadow: 5px 10px 20px #571b2a;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+a {
+    background-color: #75AFE6;
+    color: #fbfff1;
+    padding: 2px 3px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+a:visited {
+    color:#ffe4f0;
+    background-color: #da4167;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+mark {
+    background-color: #e8869e;
+    color: white;
+}
+
+mark:active {
+    background-color: #75AFE6;
+    color: #fbfff1;
+}
+
+mark:hover {
+    cursor: pointer;
+}

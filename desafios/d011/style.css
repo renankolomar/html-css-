@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a7a8f2;
+}
+/*cabeçalho*/
+header {
+    background-image: linear-gradient(to top, #3D348B, #7678ED 50%);
+    color: #ffc20d;
+    padding: 10px;
+    border: 5px solid #260268;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.442);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+.titulopt1 {
+    color: #2a245f;
+}
+
+.titulopt2 {
+    background-color: #3D348B;
+    padding: 0px 8px;
+    border-radius: 15px;
+}
+header > p {
+    text-align: center;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.asidetitle {
+    margin-top: 30px;
+    text-align: center;
+}
+
+aside > a {
+    color: #ffc20d;
+    text-decoration: none;
+    margin: 5px;
+    padding: 3px;
+}
+
+aside > a:hover {
+    background-color: #3D348B;
+    border-radius: 7px;
+    text-decoration: underline;
+}
+
+/*principal*/
+main {
+    background-color: white;
+    height: 1300px;
+    margin: auto;
+    max-width: 800px;
+    padding: 10px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.29);
+}
+
+main > article > h1 {
+    color: #ffc20d;
+    background-color:  #3D348B;
+    font-size: 1.7em;
+    padding: 0px 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.401);
+}
+
+main > article > h2 {
+    color: #ffc20d;
+    background-image: linear-gradient(to right, #3D348B, #7678ED 90%);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.401);
+}
+main > article > p {
+    margin: 8px 0px 20px;
+}
+
+main > article > p > a {
+    text-decoration: none;
+    color: #7678ED;
+    font-weight: bold;
+}
+
+main > article > p > a:hover {
+    text-decoration: underline;
+}
+
+main > article > div {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+main > article > div > a > img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 3px;
+    border: 4px solid #3D348B;
+    text-align: center;
+}
+
+.subt {
+    background-color: #3D348B;
+    color: #ffc20d;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.video {
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

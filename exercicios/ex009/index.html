@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens adaptáveis</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande">
+    </picture>
+
+    <h1>Áudios</h1>
+    <p>Receba</p>
+    <audio preload="metadata" controls>
+        <source src="receba-luva-de-pedreiro.mp3" type="audio/mpeg">
+        <a href="receba-luva-de-pedreiro.mp3" download="receba-luva-de-pedreiro.mp3" type="audio/mpeg">receba.mp3</a>
+    </audio>
+
+    <h2>Vídeos</h2>
+    <h3>Hospedagem interna</h3>
+    <video width="600" poster="imagens/Pessoa chutando uma bola.jpg" controls>
+        <source src="videos/pessoa-chutando-bola.webm.webm" type="video/webm">
+        <source src="videos/pessoa-chutando-bola.ogv.ogv" type="video/ogg">
+    </video>
+
+    <h3>Hospedagem externa</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gm0BI1Gn7xs?si=6ZaBa9Lt_qJ2485X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
