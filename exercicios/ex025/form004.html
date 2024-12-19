@@ -4,13 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        form {
+            background-color: aliceblue;
+            padding: 10px;
+            width: 180px;
+        }
+
+        label, input {
+            margin: 5px 0px;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulário 4</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <label for="iusername">Username:</label>
-        <input type="text" name="username" id="iusername" minlength="8" maxlength="20" autocomplete="username" autocapitalize="off">
-
+        <div>
+            <label for="iusername">Username:</label>
+            <input type="text" name="username" id="iusername" minlength="8" maxlength="20" autocomplete="username" autocapitalize="off" required>
+        </div>
+        <div>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+        </div>
+        <div>
+            <label for="ipassoword">Password:</label>
+            <input type="password" name="password" id="ipassword" minlength="8" max="40" autocomplete="new-password" required>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Choose your gender</legend>
+                <label for="imen">Men</label>
+                <input type="radio" name="gender" id="imen">
+                <label for="iwoman">Woman</label>
+                <input type="radio" name="gender" id="iwoman">
+            </fieldset>
+        </div>
+        <div>
+            <label for="itel">Phone number:</label>
+            <input type="tel" name="tel" id="itel" placeholder="(XX) XXXX-XXXX">
+        </div>
+        <div>
+            <label for="idate">Data:</label>
+            <input type="date" name="date" id="idate">
+        </div>
+        <div>
+            <label for="imonth">Month:</label>
+            <input type="month" name="month" id="imonth">
+        </div>
+        <div>
+            <label for="itime">Time:</label>
+            <input type="time" name="time" id="itime">
+        </div>
+        <div>
+            <label for="icolor">Color:</label>
+            <input type="color" name="color" id="icolor" value="#0000ff">
+        </div>
+        <div>
+            <label for="isat">Satifaction level:</label>
+            <input type="range" name="sat" id="isat" min="0" max="10" value="7">
+        </div>
+        <div>
+            <input type="checkbox" name="terms" id="iterms" required>
+            <label for="iterms">I accept the <a href="#">Terms of use</a></label>
+        </div>
+        <div>
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+        </div>
     </form>
 </body>
 </html>
