@@ -18,7 +18,7 @@
 </head>
 <body>
     <h1>Formulário 4</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <div>
             <label for="iusername">Username:</label>
             <input type="text" name="username" id="iusername" minlength="8" maxlength="20" autocomplete="username" autocapitalize="off" required>
@@ -35,14 +35,14 @@
             <fieldset>
                 <legend>Choose your gender</legend>
                 <label for="imen">Men</label>
-                <input type="radio" name="gender" id="imen">
+                <input type="radio" name="gender" id="imen" value="M">
                 <label for="iwoman">Woman</label>
-                <input type="radio" name="gender" id="iwoman">
+                <input type="radio" name="gender" id="iwoman" value="W">
             </fieldset>
         </div>
         <div>
             <label for="itel">Phone number:</label>
-            <input type="tel" name="tel" id="itel" placeholder="(XX) XXXX-XXXX">
+            <input type="tel" name="tel" id="itel" placeholder="(XX) XXXX-XXXX" pattern="^\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}$" required>
         </div>
         <div>
             <label for="idate">Data:</label>
