@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    display: none;
+}
+
+article {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+article::after {
+    content: 'Site desenvolvido por Renan Kolomar';
+}
+
