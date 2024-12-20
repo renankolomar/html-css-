@@ -6,96 +6,56 @@
 }
 
 body {
-    padding: 10px;
-    background-color: aliceblue;
-}
-
-h1 {
-    text-align: center;
-    background-color: rgb(9, 161, 98);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(189, 148, 255);
     color: white;
-    max-width: 500px;
-    margin: auto;
-    margin-bottom: 20px;
-    border: 2px solid black;
 }
 
-form {
-    margin: auto;
-    max-width: 500px;
+section {
+    position: relative;
+    height: 100vh;
+
 }
 
 fieldset {
-    margin-bottom: 20px ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px;
-    border-radius: 10px;
-    border: 3px solid black;
-    background-color: rgb(255, 233, 167);
+    font-size: 1.7em;
+    background-color: rgb(73, 4, 113);
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.63);
 }
 
-legend {
-    font-weight: bold;
-    font-size: 1.3em;
-    background-color: rgb(43, 119, 226);
-    color: white;
-    padding: 5px;
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 15px;
+div {
+    margin: 10px 0px;
 }
 
-div.login {
-    width: max-content;
-    margin: auto;
-}
-
-
-div.form-input {
-    margin: 5px 0px;
-}
-
-input {
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-input.boxidade {
-    width: 45px;
-    padding-left: 4px;
-}
-
-legend.optional {
-    margin-bottom: 5px;
-}
-
-.required::after {
-    content: "*";
-    color: rgb(153, 1, 1);
-}
-
-.optional::after {
-    content: " (Opcional)";
-    color: rgb(127, 127, 127);
-    font-size: 0.9em;
-}
-
-div.form-button {
-    text-align: center;
-    margin: 20px;
-}
-
-input.buttom {
-    width: 70px;
+input.text-box {
+    width: 300px;
     height: 30px;
-    font-size: 1.2em;
-    padding: 2px 4px;
+    border: 3px solid black;
+    padding: 0px 5px;
+    margin: 5px 0px;
+    outline: none;
+}
+
+div.button {
     text-align: center;
+}
+
+input.button-box {
+    width: 60px;
+    height: 25px;
+    background-color: rgb(223, 86, 216);
     color: white;
+    font-weight: bold;
+    border: 2px outset rgb(204, 45, 222);
 }
 
-input#enviar {
-    background-color: rgb(43, 119, 226);
-}
-
-input#limpar {
-    background-color: rgb(246, 94, 77);
+input.button-box:hover {
+    width: 62px;
+    height: 27px;
 }
