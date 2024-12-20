@@ -3,8 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio dos formulários</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Formulário.</h1>
+    <form action="formulario.php" autocomplete="on" method="post">
+        
+        <fieldset>
+            <legend class="leglogin">Dados de login</legend>
+            <div class="login">
+                <div class="form-input">
+                    <label for="iuser" class="required">Usuário</label> <br>
+                    <input type="text" name="user" id="iuser" minlength="8" maxlength="20" required class="loginbox">
+                </div>
+                <div class="form-input">
+                    <label for="iemail" class="required">Email</label> <br>
+                    <input type="email" name="email" id="iemail" minlength="8" maxlength="30" required autocapitalize="off" class="loginbox">
+                </div>
+                <div class="form-input">
+                    <label for="isenha" class="required">Senha</label> <br>
+                    <input type="password" name="senha" id="isenha" required min="8" max="50" class="loginbox">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="form-input">
+                <label for="inome" class="required">Nome completo</label> <br>
+                <input type="text" name="nome" id="inome" autocapitalize="words" required minlength="5" maxlength="50" size="66">
+            </div>
+            <div class="form-input">
+                <label for="iidade" class="required">Idade</label> <br>
+                <input type="number" name="idade" id="iidade" min="0" max="130" value="18" class="boxidade">
+            </div>
+            <div class="form-input">
+                <p class="optional">Sexo</p>
+                <input type="radio" name="sexo" id="isexmasc">
+                <label for="isexmasc">Masculino</label> <br>
+                <input type="radio" name="sexo" id="isexfem">
+                <label for="isexfem">Feminino</label>
+            </div>
+        </fieldset>
+        
+        <div>
+            <input type="checkbox" name="checkbox" id="icheckbox" required>
+            <label for="icheckbox">Eu li e concordo com os <a href="#">Termos e Condições</a>.</label>
+        </div>
+
+        <div class="form-button">
+            <input type="submit" value="Enviar" class="buttom" id="enviar">
+            <input type="reset" value="Limpar" class="buttom" id="limpar"> 
+        </div>
+    </form>
 </body>
 </html>
