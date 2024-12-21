@@ -23,7 +23,7 @@ main {
 main > img {
     width: 160px;
     margin: 20px 0px;
-
+    margin: auto;
 }
 
 #tablet, #printer, #notebook, #tv {
@@ -36,7 +36,7 @@ main > img {
     }
 
     #tablet {
-        display: inline;
+        display: block;
     }
 
     #phone, #printer, #notebook, #tv {
@@ -51,7 +51,7 @@ main > img {
     }
 
     #notebook {
-        display: inline;
+        display: block;
     }
 
     #phone, #printer, #tablet, #tv {
@@ -65,7 +65,7 @@ main > img {
     }
 
     #tv {
-        display: inline;
+        display: block;
     }
 
     #phone, #printer, #tablet, #notebook {
@@ -74,16 +74,22 @@ main > img {
 }
 
 @media print {
-    body {
+    html, body {
         background-image: none;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     main {
-        border-radius: 3px solid black;
+        border: 3px solid black;
     }
-    
+
+    main::after {
+        content: 'Site desenvolvido por Renan Kolomar';
+    }
+
     #printer {
-        display: inline;
+        display: block;
+        margin-bottom: 10px;
     }
 
     #phone, #notebook, #tablet, #tv {
