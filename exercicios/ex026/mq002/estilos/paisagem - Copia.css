@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*paisagem*/
+
+body {
+    background-image: url(../imagens/paisagem.webp);
+    background-color: aliceblue;
+}
+
+h1 {
+    background-color: rgb(88, 100, 196);
+    color: rgb(255, 230, 0);
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-image:linear-gradient(#CFC4FC);
+}
+
+h1 {
+    background-color: #866CF0;
+    color: #F0E26C;
+}
+
+h2 {
+    background-color: #867BB0;
+    color: #ffffff;
+}

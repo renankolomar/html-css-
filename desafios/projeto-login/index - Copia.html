@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto tela de login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <div id="login-img"></div>
+        <section>
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+            <form action="login.php" method="post" autocomplete="on">
+                <div class="login-box">
+                    <span class="material-icons">person</span>
+                    <input type="email" name="email" id="iemail" maxlength="30" placeholder="seu e-mail">
+                </div>
+                <div class="login-box">
+                    <span class="material-icons">key</span>
+                    <input type="password" name="password" id="ipassword" minlength="8" maxlength="30" placeholder="sua senha">
+                </div>
+                <div class="submit-button">
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+            <div class="recovery-button">
+                <a href="#">Esqueci a senha</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

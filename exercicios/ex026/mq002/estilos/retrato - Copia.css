@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*retrato*/
+
+body {
+    background-image: url(../imagens/retrato.jpg);
+    background-color: black;
+}
+
+h1 {
+    background-color: rgb(27, 11, 107);
+    color: yellow;
+}

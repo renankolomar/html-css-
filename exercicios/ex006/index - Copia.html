@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: rgb(158, 158, 231);
+        }
+    </style>
+    <link rel="shortcut icon" href="c:\Users\renan\OneDrive\Imagens\Imagens-site-teste\favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Tipos de formatação</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Podemos destacar um <b>texto</b> com a tag B (Não-semântica).</p>
+    <p>Devemos destacar um <strong>texto</strong> com a tag STRONG (Semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Podemos usar a tag I para deixar o <i>texto</i> em itálico/ênfase (Não-semântica).</p>
+    <p>Devemos usar a tag EM para deixar o <em>texto</em> em itálico/ênfase (Semântica).</p>
+    <h2>Texto marcado</h2>
+    <p>Para marcar um <mark>texto</mark> usamos a tag MARK.</p>
+    <p>Você pode mudar a cor de todos os marks aplicando um <mark>estilo em CSS</mark>.</p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>O texto grande pode ser definido em CSS já que não tem valor semântico, portanto a tag BIG que <big>apesar de ainda funcionar, se tornou obsoleta.</big></p>
+    <p>Você pode usar a tag small para deixar <small>textos menores</small>, ou seja, com menos relevância.</p>
+    <h2>Texto excluído</h2>
+    <p>O texto excluído indica um texto que se deve ler mas <del>não deve ser considerado</del>.</p>
+    <h2>Texto inserido</h2>
+    <p>O texto inserido <ins>fica sublinhado</ins> indicando que foi inserido.</p>
+    <h2>Sobrescrito</h2>
+    <p>O texto fica sobrescrito como em x<sup>12</sup> + 5.</p>
+    <h2>Subscrito</h2>
+    <p>O texto fica subescrito come em  H<sub>2</sub>O.</p>
+    <h2>Monoespaçado</h2>
+    <p>usando a tag CODE <code>o texto fica Monoespaçado</code></p>
+    <h2>Pré formatado</h2>
+    <p>usando a tag PRE o texto fica da mesma maneira que você digitar ele no código,mantendo as quebras de linha, por exemplo:</p>
+    <pre>
+        <code>
+    num = int(input('escreva um número'))
+    if num % 2 == 0:
+        print(f'o número é par')
+    else:
+        print(f'o número é ímpar')
+    print(f'FIM DO PROGRAMA')
+        </code>
+    </pre>
+    <h2>Citação</h2>
+    <p>Usa-se a tag q para fazer uma citação. <q>exemplo de citação</q></p>
+    <h2>Citação longa</h2>
+    <blockquote cite="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/06/278124439_479217953885248_7176633954328770607_n-e1656463189321.jpg?w=1080">indica uma citação deslocada em parágrafro próprio, geralmente longa ocupando um bloco inteiro de espaço.</blockquote>
+    <h2>Abreviações</h2>
+    <p>Usa-se a tag ABBR para mostrar o significado de uma abreviação como em <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Inverter o texto</h2>
+    <p>A tag BDO simplesmente pode inverter o texto da esquerda para a direita ou da direita para a esquerda. <bdo dir="rtl">Receba!</bdo></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio dos formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form method="post">
+            <fieldset>
+                <div>
+                    <label for="iuser">Username</label> <br>
+                    <input type="text" name="user" id="iuser" minlength="10" maxlength="20" required  class="text-box">
+                </div>
+                <div>
+                    <label for="iemail">Email</label> <br>
+                    <input type="email" name="email" id="iemail" required  class="text-box" placeholder="email@address.com">
+                </div>
+                <div>
+                    <label for="ipassword">Password</label> <br>
+                    <input type="password" name="password" id="ipassword" minlength="8" maxlength="40" required  class="text-box">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Login"  class="button-box">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

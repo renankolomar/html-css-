@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 06 - Outputs</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="in1">Insira um número:</label>
+            <input type="number" name="n1" id="in1" min="0" max="100" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="in2">Insira outro número:</label>
+            <input type="number" name="n2" id="in2" min="0" max="100" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="isoma">Resultado da soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+
+        <div>
+            <label for="inum">Número</label>
+            <input type="range" name="num" id="inum" min="0" max="100" value="50" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">50</output>
+        </div>
+        <div>
+            <label for="iano">Escolha o ano em que você nasceu:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" value="2000" oninput="iidade.innerHTML = Number(2024) - Number(iano.value)">
+            <p>Você tem <output id="iidade">24</output> anos.</p>
+        </div>
+    </form>
+</body>
+</html>

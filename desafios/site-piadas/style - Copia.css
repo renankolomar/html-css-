@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #273c19;
+    --cor2: #016FB9;
+    --cor3: #917259;
+    --cor4: #753B39;
+    --cor5: #f2edde;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor1);
+}
+
+header {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+header > h1 {
+    font-size: 3em;
+    color: white;
+}
+
+header > p {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 5px 10px;
+}
+
+nav > a {
+    color: var(--cor5);
+    text-decoration: none;
+    padding: 3px 5px;
+    margin: 0px 5px;
+    border-radius: 2px;
+}
+
+nav > a:hover {
+    background-color: var(--cor5);
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+article {
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+article > h1 {
+    font-size: 2em;
+}
+
+article > h2 {
+    margin-top: 15px;
+}
+
+article > p {
+    padding: 10px 0px;
+    line-height: 1.5em;
+}
+
+section {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    background: black url(imagens/nargas.png) no-repeat fixed center top/cover;
+    padding: 10vh 0px;
+    text-align: center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.47);
+}
+
+section > p {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: var(--cor1);
+    width: 45%;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.5em;
+    border-radius: 20px;
+}
+
+aside {
+    max-width: 600px;
+    margin: auto;
+    color: white;
+    background-color: var(--cor4);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+aside > h1 {
+    color: white;
+    
+}
+
+ol {
+    padding-top: 10px;
+    list-style-position: inside;
+    columns: 2;
+    line-height: 2em;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

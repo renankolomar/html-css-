@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    text-align: center;
+    background: url(../imagens/back-phone.webp) no-repeat fixed center center/cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: auto;
+    padding: 20px 0px;
+    background-color: rgba(255, 255, 255, 0.879);
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+main > img {
+    width: 160px;
+    margin: 20px 0px;
+    margin: auto;
+}
+
+#tablet, #printer, #notebook, #tv {
+    display: none;
+}
+
+@media screen and (min-width:500px) {
+    body {
+        background-image: url(../imagens/back-tablet.webp);
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #phone, #printer, #notebook, #tv {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+    body {
+        background-image: url(../imagens/back-pc.webp);
+    }
+
+    #notebook {
+        display: block;
+    }
+
+    #phone, #printer, #tablet, #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpeg);
+    }
+
+    #tv {
+        display: block;
+    }
+
+    #phone, #printer, #tablet, #notebook {
+        display: none;
+    }
+}
+
+@media print {
+    html, body {
+        background-image: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 3px solid black;
+    }
+
+    main::after {
+        content: 'Site desenvolvido por Renan Kolomar';
+    }
+
+    #printer {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #phone, #notebook, #tablet, #tv {
+        display: none;
+    }
+}

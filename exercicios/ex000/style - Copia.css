@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Text:ital@0;1&family=Merienda:wght@300..900&family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #3c4244, #040810);
+}
+
+main {
+    font-family: "Roboto", sans-serif;;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 10px 10px 15px #294864;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: "Pirata One", system-ui;
+    font-weight: 200;
+    color: white;
+    background-color:black
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+p {
+    text-align: center;
+}

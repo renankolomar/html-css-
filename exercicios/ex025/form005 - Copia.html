@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <fieldset>
+                <legend>Escolha seus esportes preferidos:</legend>
+                <input type="checkbox" name="fut" id="ifut">
+                <label for="ifut"> Futebol</label> <br>
+                <input type="checkbox" name="bas" id="ibas">
+                <label for="ibas"> Basquete</label> <br>
+                <input type="checkbox" name="vol" id="ivol">
+                <label for="ivol"> Vôlei</label> <br>
+                <input type="checkbox" name="ten" id="iten">
+                <label for="iten"> Tênis</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Escolha seu time:</legend>
+                <input type="radio" name="time" id="tblue">
+                <label for="tblue"> Time Azul</label>
+                <input type="radio" name="time" id="tred">
+                <label for="tred">Time Vermelho</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="icolor">Color:</label>
+            <input type="color" name="color" id="icolor" value="#ff0000">
+        </div>
+        <div>
+            <label for="ilevel">Nível de satisfação:</label>
+            <input type="range" name="level" id="ilevel" min="0" max="100" value="50">
+        </div>
+
+        <div>
+            <label for="iestados">Selecione seu estado:</label>
+            <select name="estados" id="iestados">
+                <option value="" selected>---ESCOLHA---</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Escolha sua profissão:</label>
+            <input type="text" name="prof" id="iprof" list="ilistprof">
+            <datalist id="ilistprof">
+                <option>Desenvolvedor</option>
+                <option>Contador</option>
+                <option>Advogado</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="itext">Insira um texto:</label> <br>
+            <textarea name="text" id="itext" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+</body>
+</html>

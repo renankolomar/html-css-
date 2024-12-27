@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes locais</title>
+    <style>
+        iframe {
+            border: 1px solid black;
+            width: 96vw;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de iframe</h1>
+    <p>Clique <a href="pag001.html" target="quadro">aqui</a> para abrir a página 01.</p>
+    <p>Clique <a href="pag002.html" target="quadro">aqui</a> para abrir a página 02.</p>
+    <iframe srcdoc="<h1>Escolha uma página para ser exibida aqui</h1>" name="quadro"></iframe>
+</body>
+</html>
