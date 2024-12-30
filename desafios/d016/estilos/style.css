@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(5, 7, 32);
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+
+    flex: 0 1 100vw;
+
+    background-color: rgba(1, 1, 252, 0.471);
+    padding: 20px 10px;
+}
+
+header > h1 {
+    color: rgb(175, 223, 255);
+    margin: 0px 5px;
+    font-size: 3em;
+}
+
+header ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin:5px;
+}
+
+header li {
+    list-style: none;
+    flex: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    background-color: rgb(47, 0, 255);
+}
+
+article {
+    flex: 0 1 500px;
+
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+article p {
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+    header h1 {
+        width: 100vw;
+        text-align: center;
+    }
+
+    header ul {
+        flex-flow: column wrap;
+    }
+
+    header li {
+        background-color: rgb(47, 0, 255);
+        width: 100vw;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+}
