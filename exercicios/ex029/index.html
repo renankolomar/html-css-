@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Responsivo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header.menu {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: #1c1c1c; /* Cor de fundo preta */
+  color: white;
+  padding: 0 20px; /* Espaçamento horizontal */
+  height: 60px; /* Altura do menu */
+}
+
+header.menu .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header.menu .nav-links {
+  display: flex;
+  gap: 20px; /* Espaço entre os links */
+}
+
+header.menu .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+header.menu .nav-links a:hover {
+  color: #ff9800; /* Cor ao passar o mouse */
+}
+  </style>
+</head>
+<body>
+  <header class="menu">
+    <div class="logo">Logo</div>
+    <nav class="nav-links">
+      <a href="#">Sobre</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+</body>
+</html>

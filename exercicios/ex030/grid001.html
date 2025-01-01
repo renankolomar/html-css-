@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .container:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        .grid {
+            display: grid;
+            gap: 10px;
+            
+            max-width: 600px;
+            padding: 10px;
+            margin: 0px auto;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid1 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+
+        .grid1 .n1 {
+            grid-row: 1 / span 3;
+            grid-column: 1;
+        }
+
+        .grid1 .n4 {
+            grid-column: 2 / span 2;
+            grid-row: 2 / 4;
+        }
+
+        .grid1 .n9 {
+            grid-column: span 2;
+        }
+
+        .grid2 {
+
+            grid:
+            "a a b b c" 1fr
+            "a a d d c" 1fr
+            "e f g h c" 1fr
+            "i i i i i" 1fr 
+            / 1fr 1fr 1fr 1fr 1fr; 
+
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            grid-auto-flow: column;
+            
+        }
+
+        .grid2 .n1 {
+            grid-area: a;
+        }
+
+        .grid2 .n2 {
+            grid-area: b;
+        }
+
+        .grid2 .n3 {
+            grid-area: c;
+        }
+
+        .grid2 .n4 {
+            grid-area: d;
+        }
+
+        .grid2 .n5 {
+            grid-area: e;
+        }
+
+        .grid2 .n6 {
+            grid-area: f;
+        }
+
+        .grid2 .n7 {
+            grid-area: g;
+        }
+
+        .grid2 .n8 {
+            grid-area: h;
+        }
+
+        .grid2 .n9 {
+            grid-area: i;
+        }
+
+        .grid2 .n10 {
+            grid-row: span 4;
+            background-color: tomato;
+        }
+
+        .grid3 {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+
+            max-width: 500px;
+            height: 500px;
+        }
+
+        .grid3 .n1 {
+            background-color: rgb(0, 0, 255);
+            grid-area: 2 / 2 / 4 / 4;
+            mix-blend-mode: screen;
+        }
+
+        .grid3 .n2 {
+            background-color: rgb(255, 0, 0);
+            grid-area: 2 / 3 / 4 / 5;
+            mix-blend-mode: screen;
+        }
+
+        .grid3 .n3 {
+            background-color: rgb(0, 255, 0);
+            grid-area: 3 / 2 / 5 / 5;
+            mix-blend-mode: screen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="grid grid1">
+            <div class="item n1">1</div>
+            <div class="item n2">2</div>
+            <div class="item n3">3</div>
+            <div class="item n4">4</div>
+            <div class="item n5">5</div>
+            <div class="item n6">6</div>
+            <div class="item n7">7</div>
+            <div class="item n8">8</div>
+            <div class="item n9">9</div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="grid grid2">
+            <div class="item n1">1</div>
+            <div class="item n2">2</div>
+            <div class="item n3">3</div>
+            <div class="item n4">4</div>
+            <div class="item n5">5</div>
+            <div class="item n6">6</div>
+            <div class="item n7">7</div>
+            <div class="item n8">8</div>
+            <div class="item n9">9</div>
+            <div class="item n10">10</div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="grid grid3">
+            <div class="item n1"></div>
+            <div class="item n2"></div>
+            <div class="item n3"></div>
+        </section>
+    </div>
+</body>
+</html>
