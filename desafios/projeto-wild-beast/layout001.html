@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout WildWolf</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .estrutura {
+            display: grid;
+            grid-template: 
+            "header header header" 1fr
+            "sidenav main anuncio" 4fr
+            "footer footer footer" 1fr
+            / 1fr 3fr 1fr;
+            gap: 20px;
+            
+            border: 1px solid black;
+
+            height: 100vh;
+        }
+
+        .item {
+            background-color: #AC77FA;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .sidenav {
+            grid-area: sidenav;
+            height: 200px;
+        }
+
+        .content {
+            grid-area: main;
+        }
+
+        .anuncio {
+            grid-area: anuncio;
+            height: 300px;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="estrutura">
+        <header class=" item header"></header>
+
+        <nav class=" item sidenav"></nav>
+
+        <main class=" item content"></main>
+
+        <aside class=" item anuncio"></aside>
+        
+        <footer class=" item footer"></footer>
+    </div>
+    
+</body>
+</html>
