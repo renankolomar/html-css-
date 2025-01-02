@@ -217,6 +217,12 @@ img {
     align-self: end;
 }
 
+@media screen and (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
+}
+
 /*ESTILOS CONTENT*/
 
 p {
